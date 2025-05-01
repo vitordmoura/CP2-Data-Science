@@ -70,8 +70,20 @@ st.plotly_chart(fig_global, use_container_width=True)
 st.info("""
 Este gráfico mostra a média global do índice de preços das casas para cada ano entre 2015 e 2024, acompanhada de sua faixa de confiança de 95%.
 Essa representação permite observar a tendência mundial e a variabilidade dos dados em torno da média.
-""")
+        
+A linha azul representa a média global do índice de preços por ano, permitindo visualizar o comportamento geral do mercado imobiliário global.
 
+A faixa de confiança de 95% (área sombreada azul-clara) ilustra o intervalo no qual a verdadeira média populacional do índice de preços provavelmente se encontra.
+
+📌 Se observar, háquedas e flutuações bruscas em determinados anos (2020 há 2022), isso pode estar relacionado
+ a eventos econômicos globais, como recessões, pandemias, crises financeiras ou políticas governamentais 
+ que afetaram os preços das moradias.
+
+Um crescimento constante da média sugere valorização do mercado imobiliário. 
+
+🔍 Este gráfico é fundamental para entender se há uma tendência de valorização ou desaceleração do mercado global de moradia. 
+   A inclusão do intervalo de confiança torna a análise estatística mais robusta, permitindo visualizar a incerteza associada à média global dos preços de casas.
+""")
 # ===========================================================
 # NOVO: Gráfico Boxplot por Ano para representar dispersão
 # ===========================================================
@@ -89,3 +101,24 @@ fig_box = px.box(
 fig_box.update_traces(marker=dict(opacity=0.6))
 
 st.plotly_chart(fig_box, use_container_width=True)
+
+st.info(""" O boxplot de dispersão do Índice de Preços por Ano e País fornece uma visão clara sobre a variação 
+dos preços das casas em diferentes países ao longo dos anos.
+        
+📌Cada boxplot representa um ano, no qual exibe como os preços das casas se distribuem entre os países em 
+cada ano. A dispersão dos valores permite identificar quais anos tiveram maior desigualdade nos preços das moradias.
+        
+A linha central dentro da caixa, respresenta a mediana, no qual aponta o valor central do Índice de Preço das Casas.
+Se ela se desloca para cima ao longo dos anos, indica um aumento geral nos preços das moradias.
+        
+Os Quartis (limites da caixa, parte inferior e superior da caixa) mostram onde se encontram 50% dos valores centrais do índice de preços.
+Se a caixa for larga, significa que há grande variação nos preços entre os países, Se for estreita, indica que os preços estão mais 
+homogêneos.
+        
+Extremos e Outliers (pontos fora da caixa) representam países onde os preços das casas são significativamente mais altos ou mais baixos que a média global.
+muitos outliers podem indicar desigualdade extrema entre países, onde alguns enfrentam supervalorização imobiliária e outros têm preços bem abaixo da média.
+        
+🔍Este gráfico complementa a análise anterior, mostrando não apenas a média, mas também como os preços se espalham entre os países. Se houver anos com alta 
+dispersão e muitos outliers, isso pode indicar instabilidade no mercado imobiliário global. Já uma distribuição mais uniforme sugere que os preços evoluíram 
+de forma equilibrada entre diferentes regiões.
+""")
