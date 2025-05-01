@@ -75,7 +75,7 @@ A linha azul representa a média global do índice de preços por ano, permitind
 
 A faixa de confiança de 95% (área sombreada azul-clara) ilustra o intervalo no qual a verdadeira média populacional do índice de preços provavelmente se encontra.
 
-📌 Se observar, háquedas e flutuações bruscas em determinados anos (2020 há 2022), isso pode estar relacionado
+📌 Se observar, há quedas e flutuações bruscas em determinados anos (2020 há 2022), isso pode estar relacionado
  a eventos econômicos globais, como recessões, pandemias, crises financeiras ou políticas governamentais 
  que afetaram os preços das moradias.
 
@@ -105,10 +105,10 @@ st.plotly_chart(fig_box, use_container_width=True)
 st.info(""" O boxplot de dispersão do Índice de Preços por Ano e País fornece uma visão clara sobre a variação 
 dos preços das casas em diferentes países ao longo dos anos.
         
-📌Cada boxplot representa um ano, no qual exibe como os preços das casas se distribuem entre os países em 
+Cada boxplot representa um ano, no qual exibe como os preços das casas se distribuem entre os países em 
 cada ano. A dispersão dos valores permite identificar quais anos tiveram maior desigualdade nos preços das moradias.
         
-A linha central dentro da caixa, respresenta a mediana, no qual aponta o valor central do Índice de Preço das Casas.
+📌A linha central dentro da caixa, respresenta a mediana, no qual aponta o valor central do Índice de Preço das Casas.
 Se ela se desloca para cima ao longo dos anos, indica um aumento geral nos preços das moradias.
         
 Os Quartis (limites da caixa, parte inferior e superior da caixa) mostram onde se encontram 50% dos valores centrais do índice de preços.
