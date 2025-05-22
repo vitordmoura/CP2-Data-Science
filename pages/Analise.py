@@ -68,6 +68,7 @@ fig_global.update_layout(
 st.plotly_chart(fig_global, use_container_width=True)
 
 st.info("""
+🔍 **Interpretação:** 
 Este gráfico mostra a média global do índice de preços das casas para cada ano entre 2015 e 2024, acompanhada de sua faixa de confiança de 95%.
 Essa representação permite observar a tendência mundial e a variabilidade dos dados em torno da média.
         
@@ -81,7 +82,7 @@ A faixa de confiança de 95% (área sombreada azul-clara) ilustra o intervalo no
 
 Um crescimento constante da média sugere valorização do mercado imobiliário. 
 
-🔍 Este gráfico é fundamental para entender se há uma tendência de valorização ou desaceleração do mercado global de moradia. 
+📌 Este gráfico é fundamental para entender se há uma tendência de valorização ou desaceleração do mercado global de moradia. 
    A inclusão do intervalo de confiança torna a análise estatística mais robusta, permitindo visualizar a incerteza associada à média global dos preços de casas.
 """)
 # ===========================================================
@@ -102,7 +103,8 @@ fig_box.update_traces(marker=dict(opacity=0.6))
 
 st.plotly_chart(fig_box, use_container_width=True)
 
-st.info(""" O boxplot de dispersão do Índice de Preços por Ano e País fornece uma visão clara sobre a variação 
+st.info(""" 🔍 **Interpretação:** 
+O boxplot de dispersão do Índice de Preços por Ano e País fornece uma visão clara sobre a variação 
 dos preços das casas em diferentes países ao longo dos anos.
         
 Cada boxplot representa um ano, no qual exibe como os preços das casas se distribuem entre os países em 
@@ -118,7 +120,7 @@ homogêneos.
 Extremos e Outliers (pontos fora da caixa) representam países onde os preços das casas são significativamente mais altos ou mais baixos que a média global.
 muitos outliers podem indicar desigualdade extrema entre países, onde alguns enfrentam supervalorização imobiliária e outros têm preços bem abaixo da média.
         
-🔍Este gráfico complementa a análise anterior, mostrando não apenas a média, mas também como os preços se espalham entre os países. Se houver anos com alta 
+📌Este gráfico complementa a análise anterior, mostrando não apenas a média, mas também como os preços se espalham entre os países. Se houver anos com alta 
 dispersão e muitos outliers, isso pode indicar instabilidade no mercado imobiliário global. Já uma distribuição mais uniforme sugere que os preços evoluíram 
 de forma equilibrada entre diferentes regiões.
 """)

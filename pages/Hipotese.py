@@ -30,7 +30,8 @@ t_stat, p_valor_t = stats.ttest_ind(precos_2015, precos_2024, equal_var=False)
 st.write(f"**Estatística t:** {t_stat:.2f}")
 st.write(f"**p-valor:** {p_valor_t:.4f}")
 st.info("""
-Interpretação: A análise mostrou que não houve diferença estatisticamente significativa entre os índices médios de preços das casas entre 2015 e 2024. 
+🔍 **Interpretação:** 
+ A análise mostrou que não houve diferença estatisticamente significativa entre os índices médios de preços das casas entre 2015 e 2024. 
 Apesar de possíveis variações visuais no gráfico de boxplot, os dados indicam que as médias podem ser consideradas estatisticamente semelhantes, 
 ou seja, a evolução ao longo dos anos pode ter se mantido estável em termos globais.
 """)
@@ -61,7 +62,8 @@ qui2, p_valor_q, _, _ = stats.chi2_contingency(contingencia)
 st.write(f"**Estatística Qui-quadrado:** {qui2:.2f}")
 st.write(f"**p-valor:** {p_valor_q:.4f}")
 st.info("""
-Interpretação: O teste de qui-quadrado indica que a proporção de países com índice acima da média global não varia significativamente ao longo dos anos. 
+🔍 **Interpretação:** 
+ O teste de qui-quadrado indica que a proporção de países com índice acima da média global não varia significativamente ao longo dos anos. 
 A distribuição parece relativamente estável entre os períodos analisados, sugerindo que não há uma tendência clara de aumento 
 ou queda na quantidade de países com desempenho superior à média mundial.
 """)
@@ -83,7 +85,7 @@ st.plotly_chart(fig_bar, use_container_width=True)
 
 # ------------------------------------------
 st.info("""
-Nesta página, realizamos dois testes de hipótese:
+📌 Nesta página, realizamos dois testes de hipótese:
 1. Comparação de médias entre 2015 e 2024 usando teste t.
 2. Teste qui-quadrado para verificar se a proporção de países acima da média varia por ano.
 

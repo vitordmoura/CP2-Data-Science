@@ -75,4 +75,4 @@ st.markdown("""
 - Thiago Araújo Vieira - RM553477
 - Victor Augusto Pereira dos Santos - RM553518
 - Vitor de Moura Nascimento - RM553806
-""")
+""")    

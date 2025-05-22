@@ -7,3 +7,5 @@ openpyxl
 streamlit-extras
 matplotlib
 plotnine
+statsmodels
+seaborn
