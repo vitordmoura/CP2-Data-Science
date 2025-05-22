@@ -120,8 +120,10 @@ for var in X.columns[1:]:
 st.info("""
 ### 💡 **Resumo da análise**
   A análise de regressão linear revelou que variáveis macroeconômicas, como Taxa de Inflação (%), Crescimento do PIB (%) e Taxa de Hipoteca (%), 
-possuem impacto limitado sobre o Índice de Preço das Casas, uma vez que nenhum dos fatores apresentou significância estatística relevante. A avaliação das estatísticas descritivas indicou grande variabilidade 
-nas taxas de hipoteca e inflação, enquanto o fator VIF confirmou a ausência de multicolinearidade preocupante. A análise dos resíduos revelou que o modelo pode não capturar plenamente as complexidades do mercado imobiliário,
+possuem impacto limitado sobre o Índice de Preço das Casas, uma vez que nenhum dos fatores apresentou significância estatística relevante.
+        
+A avaliação das estatísticas descritivas indicou grande variabilidade nas taxas de hipoteca e inflação, enquanto o fator VIF confirmou a ausência de
+multicolinearidade preocupante. A análise dos resíduos revelou que o modelo pode não capturar plenamente as complexidades do mercado imobiliário,
 
 Embora os gráficos tenham mostrado algumas tendências, a alta dispersão dos dados sugere que outros fatores, como oferta e demanda imobiliária, políticas econômicas e crescimento populacional, 
 podem exercer influência significativa sobre os preços das casas.""")
